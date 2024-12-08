@@ -1,15 +1,14 @@
-// src/components/DiscountItem.tsx
-
 import React from "react";
 import { IoCheckmark } from "react-icons/io5";
 
 const DiscountItem: React.FC = () => {
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto flex flex-wrap items-center gap-10 px-6">
-       
-        <div className="flex-1">
-          <h2 className="text-[#151875] text-3xl font-bold mb-4 text-center">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
+        
+        {/* Left Section: Text Content */}
+        <div className="flex-1 text-center md:text-left">
+          <h2 className="text-[#151875] text-3xl font-bold mb-4">
             Discount Item
           </h2>
           <div className="flex justify-center space-x-3 text-sm text-[#151875] mb-6">
@@ -25,7 +24,7 @@ const DiscountItem: React.FC = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget
             feugiat habitasse nec, bibendum condimentum.
           </p>
-          <ul className="grid grid-cols-2 gap-4 text-gray-500 mb-6">
+          <ul className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 text-gray-500 mb-6">
             <li className="flex items-center">
               <span className="text-slate-800 mr-2"><IoCheckmark /></span> Material expose like metals
             </li>
@@ -44,8 +43,8 @@ const DiscountItem: React.FC = () => {
           </button>
         </div>
 
-   
-        <div className="flex-1">
+      
+        <div className="flex-1 text-center">
           <img
             src="/brown.png"
             alt="Chair"
